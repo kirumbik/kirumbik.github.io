@@ -3,8 +3,8 @@
 		"3" : {
 		    "ios_rater" : true,
 		    "ios_interstitials" : true,
-		    "ios_ads_min_time" : 0, 
-		    "ios_ads_min_screens" : 0, 
+		    "ios_ads_min_time" : 10, 
+		    "ios_ads_min_screens" : 2, 
 		    "ios_ads_rt" : true,
 		    "ios_message" : {"title" : "Games 35cm", "text" : "Hi!", "act" : "Download", "act_cancel" : "Nope", "link" : "http://google.com"}
 		}
