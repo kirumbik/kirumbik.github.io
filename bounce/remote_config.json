@@ -4,7 +4,7 @@
 		    "ios_rater" : true,
 		    "ios_interstitials" : true,
 		    "ios_ads_min_time" : 10, 
-		    "ios_ads_min_screens" : 2, 
+		    "ios_ads_min_screens" : 2,  
 		    "ios_ads_rt" : true
 		}
 	},
