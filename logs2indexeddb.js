@@ -106,7 +106,7 @@ var l2i = {
      * @param fromDate (optional)
      * @param toDate (optional)
      */
-    download: function(fromDate, toDate) {
+    download: function(fileName, fromDate, toDate) {
         var fromTime = null;
         var toTime = null;
         if(fromDate != null) {
@@ -134,7 +134,7 @@ var l2i = {
                 cursor.continue();
             }
             else {
-                l2i.downloadFile(data);
+                l2i.downloadFile(data, fileName);
             }
         };
     },
@@ -149,12 +149,12 @@ var l2i = {
     /**
      * @private
      */
-    downloadFile: function(data){
+    downloadFile: function(data, fileName){
         if(!data) {
             l2i.consoles.original.log("l2i.download: Empty database");
             return;
         }
-        var filename = 'console.log'
+        var filename = fileName ? fileName : 'console.log'
 
         var blob = new Blob([data], {type: 'text/plain'}),
             e    = document.createEvent('MouseEvents'),
