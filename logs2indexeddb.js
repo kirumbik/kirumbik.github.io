@@ -130,7 +130,7 @@ var l2i = {
                 var v = cursor.value;
                 if( fromTime == null || fromTime <= v.time && v.time <= toTime) {
                     //data += new Date(v.time*1)+" "+ v.label+" "+ v.log+"\n";
-                    data += v.label+" "+ v.log+"\n";
+                    data += v.log+"\n";
                 }
                 cursor.continue();
             }
