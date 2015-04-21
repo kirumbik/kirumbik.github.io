@@ -109,18 +109,18 @@ var l2i = {
     download: function(fileName, fromDate, toDate) {
         var fromTime = null;
         var toTime = null;
-        if(fromDate != null) {
-            if(toDate != null) {
-                if(typeof(fromDate.getTime) === "undefined" || typeof(toDate.getTime) === "undefined" ) {
-                    throw "IllegalArgumentException: parameters must be Date objects";
-                }
-                fromTime = fromDate.getTime();
-                toTime = toDate.getTime();
-            }
-            else {
-                throw "IllegalArgumentException: Please provide either both parameters or none of them";
-            }
-        }
+        // if(fromDate != null) {
+        //     if(toDate != null) {
+        //         if(typeof(fromDate.getTime) === "undefined" || typeof(toDate.getTime) === "undefined" ) {
+        //             throw "IllegalArgumentException: parameters must be Date objects";
+        //         }
+        //         fromTime = fromDate.getTime();
+        //         toTime = toDate.getTime();
+        //     }
+        //     else {
+        //         throw "IllegalArgumentException: Please provide either both parameters or none of them";
+        //     }
+        // }
         var objectStore = l2i.database.transaction("logs").objectStore("logs");
 
         var data = '';
